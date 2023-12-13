@@ -14,7 +14,7 @@ RUN python -m pip install --no-cache-dir --upgrade uvicorn fastapi
 COPY ./chatbot/testing_w_fastapi/requirements.txt /scripts/requirements.txt
 RUN python -m pip install --no-cache-dir --upgrade -r /scripts/requirements.txt
 
-
+#copy
 COPY ./startup.sh /scripts/startup.sh
 COPY ./chatbot/testing_w_fastapi /code
 COPY ./123.txt /code/123.txt
