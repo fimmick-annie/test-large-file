@@ -1,0 +1,102 @@
+APP_NAME="KINNSO"
+APP_ENV=local
+APP_KEY=base64:j2wBjeBE+tSdMAoIWllj3YtUReDROHV5SH85dfkzNx0=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+
+##----------------------------------------------------------------------------------------
+##  Database settings
+##----------------------------------------------------------------------------------------
+##  Below MySQL command is to grant database access to user
+##  > GRANT ALL PRIVILEGES ON fimmick_pre_member.* TO 'laravel'@'localhost';
+##  > FLUSH PRIVILEGES;
+##----------------------------------------------------------------------------------------
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=fimmick_pre_member
+DB_USERNAME=root
+DB_PASSWORD=password
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+##----------------------------------------------------------------------------------------
+##  Application settings
+##----------------------------------------------------------------------------------------
+
+DOMAIN_PRODUCTION="www.kinnso.com"
+DOMAIN_STAGING="staging.kinnso.com"
+
+WHATSAPP_PREFIX="DEV: "
+WHATSAPP_ENABLED=false
+WHATSAPP_SID=""
+WHATSAPP_TOKEN=""
+WHATSAPP_SENDER="whatsapp:+85230013687"
+WHATSAPP_SIMULATOR_NUMBER="+85225152218"
+WHATSAPP_MAX_CS_TRIGGERED=3
+WHATSAPP_REFERRAL_URL="https://wa.me/85230013687?text="
+
+SEGMENT_ID="W1yJ9TYonvWx2FlA6469eTyvX0xegGS3"
+
+LINE_ENABLED=false
+LINE_CHANNEL_ID=
+LINE_CHANNEL_SECRET=
+LINE_CHANNEL_TOKEN=
+
+FOSO_IP_RESTRICTION_ENABLED=false
+FOSO_WHITELIST_LIMIT=50
+
+MAX_FORGOT_LINK_REQUEST=3
+BRAND_NAME="Kinnso"
+BRAND_MESSENGER_LINK="m.me/fimmick"
+SEND_WHATSAPP_AFTER_REGISTRATION=false
+
+REPORT_ENABLED=false
+REPORT_KEEP_DAYS=7
+
+##  For storing files on client server
+CLIENT_SFTP_HOST=""
+CLIENT_SFTP_USER=""
+CLIENT_SFTP_PASSWORD=""
+
+##  CCBA Sandbox Payment Gateway
+CCBA_PAYMENT_URL="http://124.127.94.56:18101/CCBIS/B2CMainPlat_00?CCB_IBSVersion=V6&"
+CCBA_MERCHANTID="105000059990027"
+CCBA_POSID="313375473"
+CCBA_BRANCHID="010741100"
+CCBA_CURRENCY_CODE="344"
+CCBA_TRANSACTION_CODE="OBS001"
+CCBA_PUBLIC_KEY="a353d9efbe090c30cb242a1f020111"
+
+##  For Google Sign-in & 2FA
+##  Get client ID & secret here: https://console.cloud.google.com/apis/credentials
+GOOGLE_TWOFA_ENABLED=false
+GOOGLE_LOGIN_ENABLED=true
+GOOGLE_CLIENT_ID=306355215324-dlr06ljiuo9k636k320hpgkq5t4lm375.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=tIjnPLm4hS42krRdHyo8S-VO
+GOOGLE_2FA_ENABLED=false
+
+OFFER_TAKING_POINT=10
+DAILY_QUESTION_POINT=20 
+REFERREE_SUCCESS_POINT=30
+SPECIAL_MISSION_POINT=100
+REPORT_US_EARNING_POINT=5
+OFFER_HUNTING_EARNING_POINT=50
+MEMBER_REFERRAL_SUCCESS_POINT=30
+
+## NO SPACE AFTER COMMA
+OFFER_HUNTING_NOTIFICATION_EMAILS="pacessho@fimmick.com,irisso@fimmick.com,kayng@fimmick.com,dp@fimmick.com,allpm@fimmick.com,general@kinnso.com,cathyho@kinnso.com,nestayeung@kinnso.com,lilylai@kinnso.com"
+
+AMURO_API_URL="https://dev-dot-inertia-abnft.appspot.com/api/"
+AMURO_API_KEY="GssAoqt0aGuZ9rRNKZpdoDLU6fT3UroqcjtZRYF3YigbuIqn"
+
+AMURO_ROUTE_CAMPAIGNS_REDEEM="campaigns/redeem"

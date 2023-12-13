@@ -1,0 +1,69 @@
+
+div#fieldChooser {
+    width: 750px;
+    height: 400px;
+    text-align: left;
+    position: relative;
+    margin-top: 3%;
+}
+
+.fc-field {
+    width: 300px;
+    margin: 5px;
+    margin-bottom: 7px;
+    padding: 3px;
+    background-color: #ffffff;
+    /* box-shadow: 0px 0px 10px 0px rgb(222 222 222); */
+    border:1px solid rgb(55, 40, 40, 0.2);;
+}
+
+.fc-field:hover {
+    outline: #cacaca solid 1px;
+}
+
+.fc-selected {
+    background-color: #ffe284;
+}
+
+.fc-selected:hover {
+    background-color: #ffd448;
+}
+
+.fc-field-list {
+    width: 330px;
+    height: 400px;
+    margin: 2%;
+    overflow: scroll;
+    border: 1px solid rgb(55, 40, 40, 0.2);
+    box-shadow: 0 0 3px #444;
+}
+
+.fc-source-fields::before {
+    content: "Channel available";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:rgb(112, 111, 111);
+    position: absolute;
+    top: -26px;
+    margin-left: 50px;    
+}
+
+.fc-destination-fields::before {
+    content: "Support Channel";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:rgb(112, 111, 111);
+    position: absolute;
+    top: -26px;
+    margin-left: 50px;   
+}
+
+.fc-source-fields {
+    float: left;
+}
+
+.fc-destination-fields {
+    float: right;
+    border-color: rgb(4, 168, 4);
+    box-shadow: 0 0 3px rgb(24, 186, 13);
+}

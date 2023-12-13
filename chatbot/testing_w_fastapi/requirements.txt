@@ -1,0 +1,13 @@
+sentence_transformers
+cohere
+openai
+faiss-cpu
+transformers==4.32.0
+accelerate
+tiktoken
+einops
+transformers_stream_generator==0.0.4
+scipy
+optimum
+auto-gptq==0.3.0
+zhconv

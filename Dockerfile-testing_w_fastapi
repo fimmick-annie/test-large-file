@@ -1,0 +1,23 @@
+FROM python:3.11
+
+RUN mkdir -p /scripts
+WORKDIR /code
+
+#RUN python -m pip install --upgrade pip
+RUN python -m pip install --no-cache-dir --upgrade uvicorn fastapi
+
+#gpu vers
+#COPY ./chatbot/testing_w_fastapi/requirements-gpu.txt /scripts/requirements-gpu.txt
+#RUN pip install --no-cache-dir --upgrade -r /scripts/requirements-gpu.txt
+
+#cpu vers.
+COPY ./chatbot/testing_w_fastapi/requirements.txt /scripts/requirements.txt
+RUN python -m pip install --no-cache-dir --upgrade -r /scripts/requirements.txt
+
+
+COPY ./startup.sh /scripts/startup.sh
+COPY ./chatbot/testing_w_fastapi /code
+COPY ./123.txt /code/123.txt
+
+CMD ["sh", "/scripts/startup.sh"]
+
